@@ -1,5 +1,10 @@
 package cn.coderpig.stealinterestingcode
 
+import android.app.Activity
+import android.content.Intent
+import android.os.Bundle
+import androidx.fragment.app.FragmentActivity
+
 /**
  * @Author: CoderPig
  * @Description:
@@ -35,4 +40,12 @@ class DoElse(private val boolean: Boolean) : Else {
 
 class NotDoElse(private val boolean: Boolean) : Else {
     override infix fun elseLet(elseBlock: Boolean.() -> Unit) {}
+}
+
+/* === Activity跳转扩展 ===*/
+inline fun <reified T : Activity> FragmentActivity.fly(bundle: Bundle? = null, isFinish: Boolean = false) {
+    val intent = Intent(this, T::class.java)
+    bundle?.let {  intent.putExtras(bundle) }
+    startActivity(intent)
+    isFinish.trueLet { finish() }
 }

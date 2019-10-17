@@ -2,7 +2,10 @@ package cn.coderpig.stealinterestingcode.SlidingMisalignment
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import cn.coderpig.stealinterestingcode.R
+import cn.coderpig.stealinterestingcode.SlidingMisalignment.adapter.LineAdapter
 import cn.coderpig.stealinterestingcode.addOnScrollListener
 import cn.coderpig.stealinterestingcode.trueLet
 import kotlinx.android.synthetic.main.activity_map_scroll.*
@@ -28,5 +31,9 @@ class MapScrollActivity : AppCompatActivity() {
                 }
             }
         )
+        val mAdapter = LineAdapter(this)
+        rv_line.layoutManager = LinearLayoutManager(this, RecyclerView.HORIZONTAL, false)
+        rv_line.adapter = mAdapter
+        mAdapter.updateSize(30)
     }
 }

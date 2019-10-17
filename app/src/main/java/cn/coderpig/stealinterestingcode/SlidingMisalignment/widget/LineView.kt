@@ -34,10 +34,10 @@ class LineView : View {
         this.mPaint.style = Paint.Style.STROKE
         this.mPaint.strokeWidth = 4.0f
         this.mPaint.isAntiAlias = true
-        var path = Path()
-        this.mPaint.pathEffect = PathDashPathEffect(path, 50.0f, 0.0f, PathDashPathEffect.Style.ROTATE);
+        val path = Path()
         path.addCircle(0.0f, 0.0f, 12.0f, Path.Direction.CW)
-
+        this.mPaint.pathEffect = PathDashPathEffect(path, 50.0f, 0.0f, PathDashPathEffect.Style.ROTATE)
+        this.mPath = Path()
     }
 
     override fun onDraw(canvas: Canvas?) {

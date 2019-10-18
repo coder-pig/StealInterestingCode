@@ -12,9 +12,9 @@ import cn.coderpig.stealinterestingcode.trueLet
 /**
  * @Author: CoderPig
  * @Description:
- * @Date: Create in 下午 11:57 2019/10/17 0017
+ * @Date: Create in 下午 05:25 2019/10/18 0018
  */
-class LineAdapter(var context: Context) : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
+class BackLevelBgAdapter (var context: Context) : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
 
     private var mSize = 0
 
@@ -24,7 +24,7 @@ class LineAdapter(var context: Context) : RecyclerView.Adapter<RecyclerView.View
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
-        return ViewHolder(LayoutInflater.from(context).inflate(R.layout.item_line, null, false))
+        return ViewHolder(LayoutInflater.from(context).inflate(R.layout.item_back_level_bg, parent, false))
     }
 
     override fun getItemCount(): Int = this.mSize

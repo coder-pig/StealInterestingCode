@@ -32,28 +32,28 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"/>
 
-    <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rv_line"
-            android:layout_width="0dp"
-            android:layout_height="80dp"
-            android:paddingStart="135dp"
-            android:paddingEnd="80dp"
-            app:layout_constraintStart_toStartOf="@id/rv_main_homework"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"
-            android:clipToPadding="false"/>
+<!--    <androidx.recyclerview.widget.RecyclerView-->
+<!--            android:id="@+id/rv_line"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="80dp"-->
+<!--            android:paddingStart="135dp"-->
+<!--            android:paddingEnd="80dp"-->
+<!--            app:layout_constraintStart_toStartOf="@id/rv_main_homework"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            android:clipToPadding="false"/>-->
 
-    <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rv_main_homework"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:paddingStart="55dp"
-            android:paddingEnd="0dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"
-            android:clipToPadding="false"/>
+<!--    <androidx.recyclerview.widget.RecyclerView-->
+<!--            android:id="@+id/rv_main_homework"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:paddingStart="55dp"-->
+<!--            android:paddingEnd="0dp"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            android:clipToPadding="false"/>-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>

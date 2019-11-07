@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_root"
+    android:layout_width="160.0dip"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:id="@+id/layout_last_level"
+        android:layout_width="115.0dip"
+        android:layout_height="56.0dip"
+        android:layout_centerVertical="true"
+        android:background="@drawable/main_left_button_bg"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8.0dip"
+            android:src="@drawable/icon_main_map_last_level" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="上一关"
+            android:textColor="@color/white"
+            android:textSize="12.0dip" />
+
+    </LinearLayout>
+</RelativeLayout>
+
+

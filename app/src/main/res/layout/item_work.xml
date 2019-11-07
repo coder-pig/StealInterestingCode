@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl_root_layout"
+    android:layout_width="160.0dip"
+    android:layout_height="fill_parent">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/anim_current_day"
+            android:layout_width="118.0dip"
+            android:layout_height="118.0dip"
+            android:layout_alignTop="@id/rl_course_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-17.0dip"
+            android:visibility="gone"
+            app:lottie_autoPlay="true"
+            app:lottie_fileName="lottie/main/map/data.json"
+            app:lottie_loop="true"
+            app:lottie_scale="0.5" />
+
+        <RelativeLayout
+            android:id="@+id/rl_course_content"
+            android:layout_width="84.0dip"
+            android:layout_height="84.0dip"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true">
+
+            <TextView
+                android:id="@+id/tv_item_pic_flag"
+                android:layout_width="68.0dip"
+                android:layout_height="21.0dip"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/main_item_pic_flag_bg"
+                android:gravity="center"
+                android:paddingBottom="2.0dip"
+                android:text="绘本上"
+                android:textColor="#ffbbbed5"
+                android:textSize="12.0dip"
+                android:visibility="gone" />
+
+            <cn.coderpig.stealinterestingcode.SlidingMisalignment.widget.EnTextView
+                android:id="@+id/tv_item_index"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_centerInParent="true"
+                android:background="@drawable/main_item_bg"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/white"
+                app:typeface="fonts/FZY4JW.TTF"
+                android:textSize="25.0dip" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/iv_lock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/rl_course_content"
+            android:layout_alignRight="@id/rl_course_content"
+            android:layout_marginTop="3.0dip"
+            android:layout_marginRight="5.0dip"
+            android:src="@drawable/icon_course_change_lock"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/iv_current_flag"
+            android:layout_width="59.0dip"
+            android:layout_height="73.0dip"
+            android:layout_alignBottom="@id/rl_course_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="65.0dip"
+            android:src="@drawable/icon_main_current_day_flag"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:id="@+id/ll_unit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="53.0dip"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <cn.coderpig.stealinterestingcode.SlidingMisalignment.widget.EnTextView
+                android:id="@+id/tv_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:shadowColor="#33000000"
+                android:shadowDy="2.0"
+                android:shadowRadius="2.0"
+                android:text="Unit 01"
+                android:textColor="@color/white"
+                android:textSize="14.0dip" />
+
+            <cn.coderpig.stealinterestingcode.SlidingMisalignment.widget.EnTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1~3"
+                android:textColor="@color/white"
+                android:textSize="12.0dip"
+                android:visibility="gone" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

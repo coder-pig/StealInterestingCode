@@ -1,5 +1,7 @@
 package cn.coderpig.stealinterestingcode
 
+import android.widget.EditText
+import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.RecyclerView.OnScrollListener
 
@@ -25,4 +27,14 @@ inline fun RecyclerView.addOnScrollListener(
             scrollStateChanged(recyclerView, newState)
         }
     })
+}
+
+/* === 获取输入框文本 === */
+fun TextView.textStr(): String {
+    return this.text.toString()
+}
+
+/* === 输入框判空 ===*/
+fun TextView.checkNotBlank(): Boolean {
+    return textStr().isNotBlank()
 }
